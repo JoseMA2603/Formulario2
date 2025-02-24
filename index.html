@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inclusión en el Directorio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="empresaForm">
+        <h2>Solicitar Inclusión en el Directorio</h2>
+        <label for="nombre">Nombre de la Empresa:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="cif">CIF:</label>
+        <input type="text" id="cif" name="cif" pattern="[A-HJNP-SUVW][0-9]{7}[0-9A-J]" title="Introduce un CIF válido" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" title="Introduce un número de teléfono válido (9 dígitos)" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
